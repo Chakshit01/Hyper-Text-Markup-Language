@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #Box1{
-            height: 100px;
-            width: 100px;
-            background-color: rgb(186, 124, 177);
-            text-align: center;
-        }
+      #icon{
+        background-image: url("myntra-logo.jpg") ;
+        height: 150px;
+        width: 150px;
+        background-size: contain;
+        /* background-color: rgb(186, 124, 177); */
+        background-repeat: no-repeat;
+        background-position: 0%; 
+        /* Using shorthand Property */
+        /* background:green url("myntra-logo.jpg")  no-repeat none center ; */
+      }
+
+      #Box1{
+        background-color: aquamarine;
+        visibility: collapse;
+        width: 50px;
+        height: 50px;
+      }
+      #Box2{
+        background-color: brown;
+        width: 50px;
+        height: 50px;
+
+      }
     </style>
-</head>
-<body>
-    <div id="Box1"></div>
-</body>
+  </head>
+  <body>
+    <div id="icon"></div>
+    <div id="Box1">Box1</div>
+    <div id="Box2">Box2</div>
+
+  </body>
 </html>
